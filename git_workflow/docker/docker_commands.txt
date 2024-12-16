@@ -1,0 +1,51 @@
+Docker Installation and Version
+
+docker --version: Check the installed Docker version.
+docker info: Display system-wide information about Docker.
+Working with Images
+
+docker pull <image>: Download an image from Docker Hub or a specified registry.
+Example: docker pull ubuntu
+docker images: List all images on your local machine.
+docker rmi <image>: Remove an image from your local machine.
+Example: docker rmi ubuntu
+docker build -t <image_name>:<tag> <path>: Build an image from a Dockerfile.
+Example: docker build -t myapp:latest .
+docker tag <source_image> <target_image>: Tag an image for easier reference.
+Example: docker tag myapp:latest myrepo/myapp:latest
+Working with Containers
+
+docker run <options> <image>: Create and start a container from an image.
+Example: docker run -d -p 80:80 nginx (Run Nginx in detached mode and map port 80)
+docker ps: List running containers.
+docker ps -a: List all containers, including stopped ones.
+docker stop <container_id>: Stop a running container.
+docker start <container_id>: Start a stopped container.
+docker restart <container_id>: Restart a container.
+docker rm <container_id>: Remove a stopped container.
+docker exec -it <container_id> <command>: Execute a command in a running container.
+Example: docker exec -it my_container bash (Open a bash shell in the container)
+Container Logs and Inspection
+
+docker logs <container_id>: View logs from a container.
+docker inspect <container_id>: Get detailed information about a container or image.
+Networking
+
+docker network ls: List all Docker networks.
+docker network create <network_name>: Create a new Docker network.
+docker network connect <network_name> <container_id>: Connect a container to a network.
+docker network disconnect <network_name> <container_id>: Disconnect a container from a network.
+Volumes
+
+docker volume ls: List all Docker volumes.
+docker volume create <volume_name>: Create a new volume.
+docker volume rm <volume_name>: Remove a volume.
+Docker Compose
+
+docker-compose up: Start services defined in a docker-compose.yml file.
+docker-compose down: Stop and remove containers defined in a docker-compose.yml file.
+docker-compose logs: View logs for services defined in a docker-compose.yml file.
+Docker System Management
+
+docker system df: Show disk usage for images, containers, and volumes.
+docker system prune: Remove unused data (stopped containers, unused networks, dangling images).
