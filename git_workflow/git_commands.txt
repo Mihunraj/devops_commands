@@ -1,0 +1,66 @@
+Setup and Configuration:
+
+git config: Set user information and preferences.
+
+git init: Initialize a new Git repository.
+
+git clone: Create a copy of a remote repository on your local machine.
+
+Branching and Merging:
+
+git branch: Manage branches in your repository.
+
+To list branches: git branch
+To create a new branch: git branch feature
+git checkout: Switch between branches or restore files.
+
+git merge: Combine changes from one branch into another.
+
+git rebase: Apply changes from one branch onto another, maintaining a cleaner history.
+
+Staging and Committing:
+
+git add: Stage changes for the next commit.
+
+Example: git add file1.txt
+git commit: Create a commit with a message.
+
+Example: git commit -m "Add new feature"
+git status: Show the status of changes in the working directory.
+
+git log: View the commit history.
+
+Remote Repositories:
+
+git push: Send local commits to a remote repository.
+
+Example: git push origin main
+git pull: Fetch and integrate changes from a remote repository.
+
+git fetch: Retrieve new commits from a remote without merging.
+
+Undoing Changes:
+
+git reset: Undo changes and manipulate commit history.
+
+git revert: Create a new commit that undoes changes from a previous commit.
+
+git stash: Temporarily store changes that are not ready to be committed.
+
+Advanced Commands:
+
+git cherry-pick: Apply specific commits from one branch to another.
+
+git bisect: Use binary search to find a commit that introduced a bug.
+
+git blame: Show who made changes to each line of a file.
+
+git reflog: View the history of changes to the branches.
+
+Cleaning Up:
+
+git clean: Remove untracked files from the working directory.
+
+git rm: Remove files from the working directory and stage the removal.
+
+git mv: Move or rename files in the repository.

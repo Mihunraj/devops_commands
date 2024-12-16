@@ -1,0 +1,1 @@
+The Gitflow Workflow defines a strict branching model designed around the project releaseOnce you finish staging all files, you can commit them and add a message describing what you changed. Then your changes are safely recorded in a new snapshot in the repo. The three file states for Git are modified, staged, and committed.
